@@ -1,0 +1,24 @@
+chosen game: Quiz game
+
+
+variables :
+1- score
+2-number of question
+3-select answer
+4-correct answer
+5- select category
+
+data structures :
+I will use an Array (List) that holds Objects (Cards). Each object represents a single page/question.
+ 
+functions you think you will need:
+
+1-check player answer
+2-update score
+3-go to next page
+
+User Stories:
+1- click start
+2-the user should choose categories option 1= easy question , 2- hard question 
+3- the game will start if the user choose the correct answer will have point in the score if 
+the answer not correct will lose one point.  
