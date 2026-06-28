@@ -1,0 +1,61 @@
+body{
+    background-color:antiquewhite;
+}
+.first-card{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+
+}
+#start-btn{
+    background-color:lightcoral;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+#start-btn:hover{
+    background-color:lightpink;
+}
+
+
+
+.first-card {
+    display: flex;
+    flex-direction: column;   /* يرتب المحتويات عمودياً (العنوان أولاً ثم الأزرار تحت بعضها) */
+    align-items: center;      /* يضع العنوان ومجموعة الأزرار في المنتصف أفقياً */
+    justify-content: center;  /* يضع المحتوى في المنتصف عمودياً */
+    text-align: center;       /* يضمن توسيط نص العنوان */
+    margin: 50px auto;        /* يعطي مسافة فوق الكارت ويوسطه في الصفحة */
+}
+
+/* الحاوية التي تجمع الزرين بجانب بعضهما */
+.category-options {
+    display: flex;
+    flex-direction: row;    /* تجعل العناصر بجانب بعضها يميناً ويساراً */
+    justify-content: center; /* تضع الزرين في المنتصف معاً */
+    gap: 30px;              /* مسافة فارغة بين الزرين */
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* التنسيق المشترك للزرين */
+.category-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 25px;
+    font-family: 'cursive';
+    font-size: 18px;
+    border: 2px solid palevioletred;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    width: 200px;          /* حجم ثابت ومناسب للزرين */
+}
+
+/* تأثير عند تمرير الماوس */
+.category-btn:hover {
+    background-color: lightgray;
+}
