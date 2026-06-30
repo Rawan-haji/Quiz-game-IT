@@ -3,11 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-       <script src="app.js"></script>
+    <title>computer-question</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="qustion">
+    <h2 id="f-q">What does SSD stand for</h2>
+    <div class="f-option">
+        <button class="option-one" id="f-correct">Solid State Drive</button>
+        <button class="option-one" id="s-false">Secure Storage Disk</button>
+        <button class="option-one" id="t-false">System Software Drive</button>
+    </div>
+</div>
 
+<div class="question-card hide" id="q2-card">
+    <h2>Which of the following is an example of application software?</h2>
+    <div class="options">
+        <button class="option-btn" data-next="q3-card">Windows</button>
+        <button class="option-btn correct" data-next="q3-card" data-correct="true">Microsoft Word</button>
+        <button class="option-btn" data-next="q3-card">CPU</button>
+    </div>
+</div>
+
+
+
+<div class="question-card hide" id="q3-card">
+    <h2>Which device connects a computer to a network?</h2>
+    <div class="options">
+        <button class="option-btn" data-next="q4-card">Sound card</button>
+        <button class="option-btn correct" data-next="q4-card" data-correct="true">Network Interface Card</button>
+        <button class="option-btn" data-next="q4-card">Power supply</button>
+    </div>
+</div>
+
+<div class="question-card hide" id="q4-card">
+    <h2>Which protocol is mainly used to load web pages</h2>
+    <div class="options">
+        <button class="option-btn" data-next="q5-card">FTP</button>
+        <button class="option-btn correct" data-next="q5-card" data-correct="true">HTTP</button>
+        <button class="option-btn" data-next="q5-card">Bluetooth</button>
+    </div>
+</div>
+
+<div class="question-card hide" id="q5-card">
+    <h2>What does USB stand for</h2>
+    <div class="options">
+        <button class="option-btn" data-next="result-card">User Storage Bus</button>
+        <button class="option-btn correct" data-next="result-card" data-correct="true">Universal Serial Bus</button>
+        <button class="option-btn" data-next="result-card">United Serial Board</button>
+    </div>
+</div>
+
+
+<div class="question-card hide" id="result-card">
+    <h2>Quiz Finished! 🎉</h2>
+    <p>Your Final Score is: <span id="final-score">0</span></p>
+</div>
+<script src="app.js"></script>
 </body>
 </html>
