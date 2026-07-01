@@ -184,7 +184,8 @@ function finishQuiz() {
     btn1.style.display = "none";
     btn2.style.display = "none";
     btn3.style.display = "none";
-
+const winSound=new Audio('./audio/clap.mp3')
+winSound.play()
 
 }
 
