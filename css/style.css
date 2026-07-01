@@ -1,91 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap');
+
 body{
-    background-color:antiquewhite;
-}
-.first-card{
-    display: flex;
-    justify-content: center;
-    align-items:center ;
-
-}
-#start-btn{
-    background-color:lightcoral;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
-}
-#start-btn:hover{
-    background-color:lightpink;
-}
-
-
-
-.first-card {
-    display: flex;
-    flex-direction: column;   /* يرتب المحتويات عمودياً (العنوان أولاً ثم الأزرار تحت بعضها) */
-    align-items: center;      /* يضع العنوان ومجموعة الأزرار في المنتصف أفقياً */
-    justify-content: center;  /* يضع المحتوى في المنتصف عمودياً */
-    text-align: center;       /* يضمن توسيط نص العنوان */
-    margin: 50px auto;        /* يعطي مسافة فوق الكارت ويوسطه في الصفحة */
-}
-
-/* الحاوية التي تجمع الزرين بجانب بعضهما */
-.category-options {
-    display: flex;
-    flex-direction: row;    /* تجعل العناصر بجانب بعضها يميناً ويساراً */
-    justify-content: center; /* تضع الزرين في المنتصف معاً */
-    gap: 30px;              /* مسافة فارغة بين الزرين */
-    margin-top: 30px;
-    width: 100%;
-}
-
-/* التنسيق المشترك للزرين */
-.category-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 15px 25px;
-    font-family: 'cursive';
-    font-size: 18px;
-    border: 2px solid palevioletred;
-    border-radius: 8px;
-    background-color: white;
-    cursor: pointer;
-    width: 200px;          /* حجم ثابت ومناسب للزرين */
-}
-
-/* تأثير عند تمرير الماوس */
-.category-btn:hover {
-    background-color: lightgray;
-}
-
-.f-option{
-    display: flex;
+    background-color:lightgray;
+    background-image: url('../pictures/background.jpeg');
+   display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
-    margin-top: 20px;
-    width: 100%;
-}
-.option-one{
-   cursor: pointer;
-   width: 80%;
-   padding: 12px;
-   font-size: small;
-   background-color: azure;
-   border: 2px solid palevioletred;
-
-}
-.option-one:hover{
-    background-color: lightpink;
-}
-#f-q{
-    display: flex;
+    min-height: 100vh;
     justify-content: center;
-    font-family:sans-serif;
-}
+    background-size: cover;
+    background-position: center;  
+    margin: 0;
+    font-family: "Big Shoulders Stencil", sans-serif;
 
-.hide {
-    display: none !important; 
 }

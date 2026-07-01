@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
 <div class="qustion">
     <h2 id="f-q">What does SSD stand for</h2>
     <div class="f-option">
@@ -19,45 +20,51 @@
 <div class="question-card hide" id="q2-card">
     <h2>Which of the following is an example of application software?</h2>
     <div class="options">
-        <button class="option-btn" data-next="q3-card">Windows</button>
-        <button class="option-btn correct" data-next="q3-card" data-correct="true">Microsoft Word</button>
-        <button class="option-btn" data-next="q3-card">CPU</button>
+        <button class="option-btn" id="q2-btn1">Windows</button>
+        <button class="option-btn id="q2-btn2>Microsoft Word</button>
+        <button class="option-btn" id="q2-btn3">CPU</button>
     </div>
+
 </div>
+
 
 
 
 <div class="question-card hide" id="q3-card">
     <h2>Which device connects a computer to a network?</h2>
     <div class="options">
-        <button class="option-btn" data-next="q4-card">Sound card</button>
-        <button class="option-btn correct" data-next="q4-card" data-correct="true">Network Interface Card</button>
-        <button class="option-btn" data-next="q4-card">Power supply</button>
+        <button class="option-btn" id="id="q3-btn1>Sound card</button>
+        <button class="option-btn correct" id="id="q3-btn2>Network Interface Card</button>
+        <button class="option-btn" id="id="q3-btn3>Power supply</button>
     </div>
 </div>
 
 <div class="question-card hide" id="q4-card">
     <h2>Which protocol is mainly used to load web pages</h2>
     <div class="options">
-        <button class="option-btn" data-next="q5-card">FTP</button>
-        <button class="option-btn correct" data-next="q5-card" data-correct="true">HTTP</button>
-        <button class="option-btn" data-next="q5-card">Bluetooth</button>
+        <button class="option-btn" id="id="q4-btn1>FTP</button>
+        <button class="option-btn correct" id="q4-btn2">HTTP</button>
+        <button class="option-btn" id="q4-btn3">Bluetooth</button>
     </div>
 </div>
 
 <div class="question-card hide" id="q5-card">
     <h2>What does USB stand for</h2>
     <div class="options">
-        <button class="option-btn" data-next="result-card">User Storage Bus</button>
-        <button class="option-btn correct" data-next="result-card" data-correct="true">Universal Serial Bus</button>
-        <button class="option-btn" data-next="result-card">United Serial Board</button>
+        <button class="option-btn" id="q5-btn1">User Storage Bus</button>
+        <button class="option-btn correct" id="q5-btn2">Universal Serial Bus</button>
+        <button class="option-btn" id="q5-btn3">United Serial Board</button>
     </div>
 </div>
 
 
-<div class="question-card hide" id="result-card">
+<!-- <div class="question-card hide" id="result-card">
     <h2>Quiz Finished! 🎉</h2>
-    <p>Your Final Score is: <span id="final-score">0</span></p>
+    <p>Your Final Score is: <span id="final-score">0</span></p> -->
+
+<h3 id="result">Score:</h3>
+<button id="restart">Restart</button>
+
 </div>
 <script src="app.js"></script>
 </body>
