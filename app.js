@@ -334,7 +334,10 @@ function finishQuiz2() {
     const winSound=new Audio('./audio/clap.mp3')
 winSound.play()
 }
+re2.addEventListener('click',function() {
+       window.location.href="index.html"
 
+ }) 
 
 
 
