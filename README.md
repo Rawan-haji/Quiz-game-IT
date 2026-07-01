@@ -7,12 +7,15 @@ _A super cute Quiz game._
 ## Getting Started
 
 ### play the game
-[Deployed game](link-is-her)
+[Deployed game](https://rawan-haji.github.io/Quiz-game-IT/)
 
 
 ### how to play
 1. press the start button
 2. choose the category
+3. user should choose the right answers
+4. will disply the score
+
 ### installation
 no installation required simply clone
 the repo 
@@ -28,4 +31,5 @@ open index.html
 - **JavaScript**
 
 ### future 
-### credits
+- I will add more category
+- I will make Levels  
