@@ -195,6 +195,147 @@ if (re) {
     });
 }
 
+//programming
+if(Pbtn1&&Pbtn2&&Pbtn3){
+Pbtn1.addEventListener('click',click1Correct)
+Pbtn2.addEventListener('click',click1Wrong)
+Pbtn3.addEventListener('click',click1Wrong)
+result2.textContent=`Score ${score2}`
+}
+function click1Correct(){
+    score2++
+    Pqustion()
+    //finishQuiz2()
+}
+function click1Wrong(){
+Pqustion()
+//finishQuiz2()
+}
+
+function Pqustion(){
+    secQuestion.textContent="Which CSS selector has the highest specificity"
+    Pbtn1.textContent="Class selector(.menu)"
+    Pbtn2.textContent="Element selector (p)"
+    Pbtn3.textContent="ID selector(#menu)"
+result2.textContent=`Score ${score2}`
+    Pbtn1.removeEventListener('click',click1Correct)
+    Pbtn2.removeEventListener('click',click1Wrong)
+    Pbtn3.removeEventListener('click',click1Wrong)
+
+    Pbtn1.addEventListener('click',click2Wrong)
+    Pbtn2.addEventListener('click',click2Wrong)
+    Pbtn3.addEventListener('click',click2Correct)
+
+    
+
+}
+function click2Correct(){
+        score2++
+        Pqustion2()
+  //     finishQuiz2()
+    }
+    function click2Wrong(){
+        Pqustion2()
+    //    finishQuiz2()
+
+    }
+function Pqustion2(){
+secQuestion.textContent="Which JavaScript method removes the last element from an array"
+Pbtn1.textContent="shift()"
+Pbtn2.textContent="pop()"
+Pbtn3.textContent="splice()"
+result2.textContent=`Score ${score2}`
+
+
+    Pbtn1.removeEventListener('click', click2Wrong)
+    Pbtn2.removeEventListener('click', click2Wrong)
+    Pbtn3.removeEventListener('click', click2Correct)
+
+
+
+Pbtn1.addEventListener('click',click3wr)
+Pbtn2.addEventListener('click',click3Cor)
+Pbtn3.addEventListener('click',click3wr)
+
+
+}
+
+function click3Cor(){
+    score2++
+    Pqustion3()
+    //finishQuiz2()
+
+}
+function click3wr(){
+    Pqustion3()
+    //finishQuiz2()
+
+}
+
+function Pqustion3(){
+secQuestion.textContent="Which CSS layout system is primarily designed for one-dimensional layouts"
+Pbtn1.textContent="Grid"
+Pbtn2.textContent="Flexbox"
+Pbtn3.textContent="position"
+result2.textContent=`Score ${score2}`
+
+Pbtn1.removeEventListener('click',click3wr)
+Pbtn2.removeEventListener('click',click3Cor)
+Pbtn3.removeEventListener('click',click3wr)
+
+Pbtn1.addEventListener('click',click4Wrong)
+Pbtn2.addEventListener('click',click4Correct)
+Pbtn3.addEventListener('click',click4Wrong)
+
+
+}
+
+function click4Correct(){
+    score2++
+    Pqustion4()
+    //finishQuiz2()
+    
+}
+function click4Wrong(){
+Pqustion4()
+//finishQuiz2()
+
+}
+function Pqustion4(){
+    secQuestion.textContent='Which CSS value centers items horizontally in Flexbox container'
+    Pbtn1.textContent='align-item:center'
+    Pbtn2.textContent="justify-content: center"
+    Pbtn3.textContent="text-align: center"
+result2.textContent=`Score ${score2}`
+    Pbtn1.removeEventListener('click',click4Wrong)
+    Pbtn2.removeEventListener('click',click4Correct)
+    Pbtn3.removeEventListener('click',click4Wrong)
+
+    Pbtn1.addEventListener('click',click5Wrong)
+    Pbtn2.addEventListener('click',click5Correct)
+    Pbtn3.addEventListener('click',click5Wrong)
+    result2.textContent=`Score ${score2}`
+
+ function click5Correct(){
+    score2++
+  finishQuiz2()
+ }
+ function click5Wrong(){
+    finishQuiz2()
+}}
+function finishQuiz2() {
+    secQuestion.textContent = "Quiz Finished! 🎉 Your final score is: " + score2 + " out of 5";
+    result2.textContent = ''
+    // يختفون الازره
+    Pbtn1.style.display = "none";
+    Pbtn2.style.display = "none";
+    Pbtn3.style.display = "none";
+
+    const winSound=new Audio('./audio/clap.mp3')
+winSound.play()
+}
+
+
 
 
 
