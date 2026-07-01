@@ -1,12 +1,12 @@
 //getelementbyid means that connect js and html also search to match for the id
 const letstart = document.getElementById('start-btn');
-// addEventListener for example the user will click the the code will work
+// addEventListener for example the user will click the  code will work
 if(letstart){
     letstart.addEventListener('click',(element)=>{
         window.location.href="category.html"
     })
 }
-// --- أكواد التنقل بين الصفحات ---
+//أكواد التنقل بين الصفحات 
 const computerBasic = document.getElementById('computer-btn');
 if(computerBasic){
     computerBasic.addEventListener('click', () => {
@@ -22,7 +22,7 @@ if(programmingPage){
 }
 
 
-// --- نظام الأسئلة العادي والبسيط جداً ---
+
 let score = 0;
 let score2=0
 
@@ -45,9 +45,9 @@ const re = document.querySelector('#restart')
 const re2=document.querySelector('#restart2')
 
 
-// المرحلة 1: تشغيل السؤال الأول عند فتح الصفحة
+// تشغيل السوال الاول لمن نبتدي
 if (btn1 && btn2 && btn3) {
-    // نربط الأزرار الثلاثة بوظائف السؤال الأول
+   
     btn1.addEventListener('click', clickQ1Correct);
     btn2.addEventListener('click', clickQ1Wrong);
     btn3.addEventListener('click', clickQ1Wrong);
@@ -59,19 +59,19 @@ if (btn1 && btn2 && btn3) {
 
 // اذا اختار ذي الجواب بيزيد له نقطه
 function clickQ1Correct() {
-    score = score + 1;// زيادة النقطة لأن الجواب الأول صح (Solid State Drive)
+    score = score + 1;
 
     goToSecondQuestion();
 }
 
 
 function clickQ1Wrong() {
-    goToSecondQuestion(); // انتقال فقط بدون نقاط
+    goToSecondQuestion(); 
 }
 
 //السوال الثاني 
 function goToSecondQuestion() {
-    // 1. تغيير الكلمات على الشاشة باستخدام  
+    // تغير السوال  
     mainQuestion.textContent="Which of the following is an example of application software?"
         btn1.textContent="Windows"
         btn2.textContent="Microsoft word"
@@ -84,9 +84,9 @@ function goToSecondQuestion() {
     btn2.removeEventListener('click', clickQ1Wrong);
     btn3.removeEventListener('click', clickQ1Wrong);
 
-    // 3. ربط الأزرار بوظائف السؤال الثاني الجديدة
+    // ربطنا في الازره السوال الثاني
     btn1.addEventListener('click', clickQ2Wrong);
-    btn2.addEventListener('click', clickQ2Correct); // الخيار الثاني هو الصح هنا (Microsoft word)
+    btn2.addEventListener('click', clickQ2Correct); 
     btn3.addEventListener('click', clickQ2Wrong);
 }
 
@@ -114,9 +114,9 @@ function goToThirdQuestion() {
     btn2.removeEventListener('click', clickQ2Correct)
     btn3.removeEventListener('click', clickQ2Wrong)
 
-    btn1.addEventListener('click', clickQ3Correct) // الخيار الأول هو الصح هنا (Network Interface card)
+    btn1.addEventListener('click', clickQ3Correct) //الاختيار الاول اهو الصح
     btn2.addEventListener('click', clickQ3Wrong)
-    btn3.addEventListener('click', clickQ3Wrong)
+    btn3.addEventListener('click',clickQ3Wrong)
 }
 
 function clickQ3Correct() {

@@ -97,17 +97,17 @@ h1{
     margin: 50px auto;        
 }
 
-/* الحاوية التي تجمع الزرين بجانب بعضهما */
+
 .category-options {
     display: flex;
-    flex-direction: row;    /* تجعل العناصر بجانب بعضها يميناً ويساراً */
-    justify-content: center; /* تضع الزرين في المنتصف معاً */
-    gap: 30px;              /* مسافة فارغة بين الزرين */
+    flex-direction: row;    /* اتخلي العنصر يم بعض*/
+    justify-content: center; /* يكون الزرار فل نص*/
+    gap: 30px;              /* مسافه بين كل زرين    */
     margin-top: 30px;
     width: 100%;
 }
 
-/* التنسيق المشترك للزرين */
+
 .category-btn {
     display: flex;
     align-items: center;
@@ -125,7 +125,6 @@ h1{
     color: black;        
 }
 
-/* تأثير عند تمرير الماوس */
 .category-btn:hover {
     background-color: lightgray;
 }
@@ -166,10 +165,7 @@ h2{
 .hide {
     display: none !important; 
 }
-/* img{
-    max-width: 40%;
-    height: auto;
-} */
+
 
 #img{
     max-width: 15%;
